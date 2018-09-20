@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: test-gw
+
+zuul:
+    routes:
+        service-01:
+            path: /available/**
+            url: forward:/checked-out
